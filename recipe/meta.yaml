@@ -26,8 +26,7 @@ about:
   license: Apache-2.0
   license_file:
     - LICENSE
-    - license-files_cue/
-    - license-files_cuepls/
+    - license-files/
   summary: The home of the CUE language! Validate and define text-based and dynamic configuration
   dev_url: https://github.com/cue-lang/cue
 
