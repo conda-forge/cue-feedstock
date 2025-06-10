@@ -1,5 +1,5 @@
 {% set name = "cue" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cue-lang/cue/archive/v{{ version }}.tar.gz
-  sha256: a72115fc5273341a706c33488336b7c6f3974fbbd5ac27a45291b5c8148779dc
+  sha256: 531dd591a164a351a2e7f2ecb38170ec129de2e7033d34d46887b34c70643942
 
 build:
   number: 0
