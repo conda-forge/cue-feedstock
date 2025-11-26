@@ -1,34 +1,36 @@
-{% set name = "cue" %}
-{% set version = "0.15.1" %}
+schema_version: 1
+
+context:
+  version: 0.15.1
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: cue
+  version: ${{ version }}
 
 source:
-  url: https://github.com/cue-lang/cue/archive/v{{ version }}.tar.gz
+  url: https://github.com/cue-lang/cue/archive/v${{ version }}.tar.gz
   sha256: d1bd4fe4fe39febdc07819e6feac8f8be9fc374202744d464ab540569855c7d8
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
-    - {{ compiler('go-nocgo') }}
+    - ${{ compiler('go-nocgo') }}
     - go-licenses
 
-test:
-  commands:
-    - cue --help
+tests:
+  - script:
+      - cue --help
 
 about:
-  home: https://github.com/cue-lang/cue
   license: Apache-2.0
   license_file:
     - LICENSE
     - license-files/
   summary: The home of the CUE language! Validate and define text-based and dynamic configuration
-  dev_url: https://github.com/cue-lang/cue
+  homepage: https://github.com/cue-lang/cue
+  repository: https://github.com/cue-lang/cue
 
 extra:
   recipe-maintainers:
