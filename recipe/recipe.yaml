@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.16.1"
+  version: "0.17.0"
 
 package:
   name: cue
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/cue-lang/cue/archive/v${{ version }}.tar.gz
-  sha256: 33842f2a3bb95daac2290dc17cb15725a68bd6c607483f643c7206bd11299da8
+  sha256: c4fbfe638e3d1d37c57adf8ce3ab1b2f47d7fa64387686320d7bbf9fea692be5
 
 build:
   number: 0
